@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md Farhan Ansari – Learn Skills. Build Your Own Income.</title>
+<meta name="description" content="Learn digital skills step by step with Md Farhan Ansari. No experience needed. Start building your online income today.">
+<meta property="og:title" content="Md Farhan Ansari – Build Your Own Income">
+<meta property="og:description" content="No experience. No confusion. A clear path to learn skills and start earning online.">
+<meta property="og:image" content="https://i.ibb.co/Dfb4MsNV/Whats-App-Image-2026-10-22-at-10-37-07-AM.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<!-- Meta Pixel: apna naya Pixel ID yaha daalo (purane client ka ID use mat karna) -->
+<style>
+:root{
+  --bg:#080b1e;--bg2:#0d1230;--card:#111739;--line:rgba(255,255,255,.1);
+  --text:#eef1ff;--muted:#9aa3c7;--aqua:#2ee6d6;--violet:#8b6bff;--pink:#ff6fb5;
+  --grad:linear-gradient(120deg,#2ee6d6,#8b6bff);
+  --glow:0 10px 40px rgba(139,107,255,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.18;letter-spacing:-.02em}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:84px 0;position:relative}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sec-title{font-size:clamp(1.7rem,4.6vw,2.7rem);font-weight:800;margin-bottom:14px}
+.sub{color:var(--muted);max-width:600px;font-size:1.05rem}
+.center{text-align:center}.center .sub{margin:0 auto}
+:focus-visible{outline:2px solid var(--aqua);outline-offset:3px}
+
+/* aurora background */
+.aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.aurora i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift 14s ease-in-out infinite alternate}
+.aurora i:nth-child(1){width:420px;height:420px;background:#4b2fd6;top:-120px;left:-100px}
+.aurora i:nth-child(2){width:360px;height:360px;background:#0fb9ac;top:80px;right:-80px;animation-delay:-5s}
+.aurora i:nth-child(3){width:300px;height:300px;background:#c13c86;bottom:-120px;left:40%;animation-delay:-9s;opacity:.3}
+@keyframes drift{to{transform:translate(70px,50px) scale(1.15)}}
+
+/* button */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--grad);color:#06091c;font-weight:700;font-size:1.02rem;padding:16px 32px;border:none;border-radius:14px;cursor:pointer;box-shadow:var(--glow);transition:transform .25s,box-shadow .25s;font-family:inherit;position:relative}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 50px rgba(46,230,214,.45)}
+.btn:active{transform:scale(.98)}
+.pulse{animation:pulse 2.6s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 8px 30px rgba(139,107,255,.4)}50%{box-shadow:0 8px 52px rgba(46,230,214,.65)}}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(8,11,30,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Sora',sans-serif;font-weight:800;font-size:1.1rem}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--aqua)}
+.nav-cta{padding:10px 22px;font-size:.88rem;border-radius:10px}
+@media(max-width:760px){.nav-links a{display:none}}
+
+/* hero */
+.hero{padding:130px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative;z-index:2}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-photo{order:-1}}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(46,230,214,.1);border:1px solid rgba(46,230,214,.35);color:var(--aqua);padding:8px 18px;border-radius:50px;font-size:.85rem;font-weight:600;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--aqua);animation:dot 1.8s infinite}
+@keyframes dot{0%{box-shadow:0 0 0 0 rgba(46,230,214,.7)}70%,100%{box-shadow:0 0 0 10px rgba(46,230,214,0)}}
+.hero h1{font-size:clamp(2.1rem,5.6vw,3.7rem);font-weight:800;margin-bottom:20px}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line span{display:block;transform:translateY(105%);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .line:nth-child(2) span{animation-delay:.18s}
+@keyframes rise{to{transform:none}}
+.lead{color:var(--muted);font-size:1.12rem;max-width:520px;margin-bottom:28px}
+@media(max-width:860px){.lead{margin:0 auto 28px}}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;color:var(--muted);font-size:.92rem}
+@media(max-width:860px){.ticks{justify-content:center}}
+.ticks span::before{content:'✓';color:var(--aqua);font-weight:800;margin-right:8px}
+
+/* photo with rotating ring */
+.hero-photo{position:relative;max-width:400px;width:100%;margin:0 auto}
+.ring{position:absolute;inset:-14px;border-radius:34px;background:conic-gradient(from 0deg,#2ee6d6,#8b6bff,#ff6fb5,#2ee6d6);animation:spin 7s linear infinite;filter:blur(1px)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-photo .frame{position:relative;border-radius:28px;overflow:hidden;background:var(--bg2);border:4px solid var(--bg);animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.hero-photo img{width:100%;height:auto}
+.hero-photo .badge{position:absolute;left:14px;bottom:14px;background:rgba(8,11,30,.85);backdrop-filter:blur(8px);border:1px solid rgba(46,230,214,.4);padding:8px 16px;border-radius:40px;font-size:.82rem;font-weight:600;color:var(--aqua)}
+
+/* skills ticker */
+.ticker{border-block:1px solid var(--line);background:var(--bg2);overflow:hidden;padding:16px 0}
+.ticker div{display:flex;gap:44px;width:max-content;animation:tick 28s linear infinite;font-family:'Sora',sans-serif;font-weight:600;color:var(--muted);white-space:nowrap}
+.ticker b{color:var(--violet);font-weight:700;margin-right:44px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* cards */
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.g2,.g4{grid-template-columns:1fr}section{padding:62px 0}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:border-color .3s,transform .3s;transform-style:preserve-3d}
+.card:hover{border-color:rgba(46,230,214,.55)}
+.card .ic{font-size:1.7rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.98rem}
+.card h3{font-size:1.08rem;margin-bottom:6px}
+
+.voice{margin-top:36px;border-left:3px solid var(--violet);background:var(--card);border-radius:0 18px 18px 0;padding:28px}
+.voice .q{font-family:'Sora',sans-serif;font-size:clamp(1.05rem,2.5vw,1.3rem);font-weight:700;margin-bottom:8px}
+.voice .last{color:var(--muted);margin-top:14px}
+.cta-row{text-align:center;margin-top:40px}
+
+.reality{background:var(--bg2);text-align:center}
+.reality .big{font-size:clamp(2rem,6vw,3.4rem);font-weight:800;margin-bottom:22px}
+.reality p{color:var(--muted);font-size:1.1rem;margin-bottom:6px}
+.reality p.em{color:var(--text);font-weight:600;margin-top:20px}
+
+/* mentor */
+.mentor-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+@media(max-width:860px){.mentor-wrap{grid-template-columns:1fr}}
+.mphoto{border-radius:26px;padding:3px;background:var(--grad);max-width:440px;margin:0 auto;box-shadow:var(--glow)}
+.mphoto img{border-radius:24px;width:100%;height:auto}
+.mentor-text h2{font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:800;margin-bottom:14px}
+.mentor-text p{color:var(--muted);margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 24px}
+.tags span{background:var(--card);border:1px solid var(--line);padding:8px 16px;border-radius:40px;font-size:.88rem;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:26px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 8px;text-align:center}
+.stat b{display:block;font-family:'Sora',sans-serif;font-size:1.5rem;font-weight:800}
+.stat span{color:var(--muted);font-size:.8rem}
+
+/* vision */
+.imagine{background:var(--bg2)}
+.shift{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin-bottom:12px}
+.shift .from{color:var(--muted)}.shift .arrow{color:var(--aqua);font-weight:800}.shift .to{font-weight:700}
+@media(max-width:560px){.shift{grid-template-columns:1fr;text-align:center;gap:4px}.shift .arrow{transform:rotate(90deg)}}
+.dream{text-align:center;margin-top:36px}
+.dream p{color:var(--muted);font-size:1.1rem;margin-bottom:6px}
+.dream .strong{color:var(--text);font-weight:700;font-size:1.25rem;margin-top:14px}
+
+.qa{display:grid;grid-template-columns:auto 1fr;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:12px}
+.qa .n{width:40px;height:40px;border-radius:12px;background:var(--grad);color:#06091c;font-weight:800;display:flex;align-items:center;justify-content:center}
+.qa h4{font-size:1.05rem;margin-bottom:4px}
+.qa p{color:var(--muted)}
+
+.purpose{background:var(--bg2);text-align:center}
+.purpose p{color:var(--muted);font-size:1.15rem;margin-bottom:6px}
+.purpose p.big{color:var(--text);font-weight:600;font-size:1.3rem;margin-top:18px}
+
+/* steps timeline */
+.steps{position:relative}
+.step .num{font-family:'Sora',sans-serif;font-weight:800;font-size:.9rem;color:var(--aqua);margin-bottom:8px;display:block}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+details summary{list-style:none;cursor:pointer;padding:19px 22px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:14px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:'+';color:var(--aqua);font-size:1.5rem;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details[open]{border-color:rgba(46,230,214,.5)}
+details p{padding:0 22px 20px;color:var(--muted)}
+
+.final{text-align:center;overflow:hidden}
+.final .container{position:relative;z-index:2}
+.final h2{font-size:clamp(1.8rem,5vw,2.9rem);font-weight:800;max-width:760px;margin:0 auto 14px}
+.final p.sub{margin:0 auto 28px}
+.how{max-width:620px;margin:34px auto 0;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;text-align:left}
+.how h4{margin-bottom:10px;color:var(--aqua)}
+.how li{color:var(--muted);margin:6px 0 6px 20px}
+.how .nt{margin-top:12px;font-weight:600}
+
+footer{border-top:1px solid var(--line);padding:44px 0 90px;text-align:center;background:var(--bg2)}
+.quote{font-family:'Sora',sans-serif;font-weight:600;font-size:1.05rem;max-width:540px;margin:10px auto 20px}
+footer small{color:var(--muted);display:block;margin-top:6px}
+.linkbtn{background:none;border:none;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:.88rem;font-family:inherit}
+.linkbtn:hover{color:var(--aqua)}
+.note{color:var(--muted);font-size:.85rem;margin-top:16px}
+
+/* modals */
+.backdrop{position:fixed;inset:0;background:rgba(4,6,18,.7);backdrop-filter:blur(8px);z-index:9998;opacity:0;visibility:hidden;transition:.3s}
+.backdrop.show{opacity:1;visibility:visible}
+.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.95);z-index:9999;width:92%;max-width:460px;max-height:90vh;overflow-y:auto;background:var(--card);border:1px solid rgba(139,107,255,.5);border-radius:22px;padding:30px 26px;opacity:0;visibility:hidden;transition:.3s;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.modal.show{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+.modal .x{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:1.7rem;cursor:pointer}
+.modal .x:hover{color:var(--aqua)}
+.modal h3{font-size:1.35rem;margin-bottom:4px}
+.modal .msub{color:var(--muted);font-size:.9rem;margin-bottom:18px}
+.f{margin-bottom:14px}
+.f label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
+.f input,.f select{width:100%;background:var(--bg);border:1.5px solid var(--line);color:var(--text);border-radius:12px;padding:13px 14px;font-size:1rem;font-family:inherit;transition:.2s}
+.f input:focus,.f select:focus{outline:none;border-color:var(--aqua);box-shadow:0 0 0 4px rgba(46,230,214,.15)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.err{color:#ff7b8a;font-size:.82rem;margin-top:4px;display:none}
+.f.bad .err{display:block}.f.bad input,.f.bad select{border-color:#ff7b8a}
+.secure{text-align:center;color:var(--muted);font-size:.78rem;margin-top:12px}
+.pp p{color:var(--muted);font-size:.92rem;margin-bottom:12px}
+.pp strong{color:var(--text)}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:800;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(8,11,30,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:none;transform:translateY(110%);transition:.4s}
+.sticky.show{transform:none}
+.sticky .btn{width:100%;padding:14px}
+@media(max-width:768px){.sticky{display:block}}
+
+/* one scroll reveal, used only on section blocks */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 .line span{transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-in">
+    <div class="logo">Md Farhan <span class="gt">Ansari</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <button class="btn nav-cta open-any" data-source="Navbar">Start Now</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="aurora"><i></i><i></i><i></i></div>
+  <div class="container hero-grid">
+    <div>
+      <div class="pill"><span class="dot"></span> <span class="counter" data-target="1000" data-suffix="+">0</span> People Already Joined</div>
+      <h1><span class="line"><span>Stop Depending on Others.</span></span><span class="line"><span class="gt">Start Earning With Skills.</span></span></h1>
+      <p class="lead">No experience. No degree. No confusion. A clear, step-by-step path to learn in-demand digital skills and build your own online income, even if you’re starting from zero.</p>
+      <button class="btn pulse open-any" data-source="Hero">🚀 Start Your Journey Now</button>
+      <div class="ticks"><span>No Experience Needed</span><span>Learn on Your Smartphone</span><span>Personal Guidance</span></div>
+    </div>
+    <div class="hero-photo">
+      <div class="ring"></div>
+      <div class="frame">
+        <img src="https://i.ibb.co/Dfb4MsNV/Whats-App-Image-2026-10-22-at-10-37-07-AM.jpg" alt="Md Farhan Ansari – Skills Mentor" fetchpriority="high">
+        <div class="badge">✓ Your Skills Mentor</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div>
+  <span><b>◆</b>Social Media</span><span><b>◆</b>Content Creation</span><span><b>◆</b>Affiliate Marketing</span><span><b>◆</b>Video Editing</span><span><b>◆</b>Personal Branding</span><span><b>◆</b>Online Income</span>
+  <span><b>◆</b>Social Media</span><span><b>◆</b>Content Creation</span><span><b>◆</b>Affiliate Marketing</span><span><b>◆</b>Video Editing</span><span><b>◆</b>Personal Branding</span><span><b>◆</b>Online Income</span>
+</div></div>
+
+<!-- SOUND FAMILIAR -->
+<section>
+  <div class="container">
+    <div class="center rv">
+      <h2 class="sec-title">This Might Feel <span class="gt">Uncomfortably Familiar…</span></h2>
+    </div>
+    <div class="grid g2 rv" style="margin-top:34px">
+      <div class="card tilt"><div class="ic">💭</div><p>You want to earn… but you don’t know where to start.</p></div>
+      <div class="card tilt"><div class="ic">📱</div><p>You save reels about earning online… but never begin.</p></div>
+      <div class="card tilt"><div class="ic">👀</div><p>You see others moving ahead while you feel stuck.</p></div>
+      <div class="card tilt"><div class="ic">😔</div><p>You keep doubting yourself, every single day.</p></div>
+    </div>
+    <div class="voice rv">
+      <div class="q">“I don’t have any skills.”</div>
+      <div class="q">“What if I fail?”</div>
+      <div class="q">“What will people say?”</div>
+      <div class="q">“Maybe this isn’t for me.”</div>
+      <p class="last">And the worst part? You slowly start believing it.</p>
+    </div>
+    <div class="cta-row"><button class="btn open-any" data-source="Familiar Section">👉 Start Your Journey Today</button></div>
+  </div>
+</section>
+
+<!-- REALITY -->
+<section class="reality">
+  <div class="container rv">
+    <h2 class="big">You’re Not <span class="gt">The Problem.</span></h2>
+    <p>You were never taught how to earn.</p>
+    <p>No one showed you which skills actually matter.</p>
+    <p>No one gave you a roadmap. No one told you where to begin.</p>
+    <p class="em">You stayed confused, not because you can’t do it,<br>but because no one made it simple for you.</p>
+    <div class="cta-row"><button class="btn open-any" data-source="Reality Section">👉 Get Your Roadmap</button></div>
+  </div>
+</section>
+
+<!-- MENTOR -->
+<section id="about">
+  <div class="container mentor-wrap">
+    <div class="mphoto rv"><img src="https://i.ibb.co/Dfb4MsNV/Whats-App-Image-2026-10-22-at-10-37-07-AM.jpg" alt="Md Farhan Ansari" loading="lazy"></div>
+    <div class="mentor-text rv">
+      <h2>Hi, I’m <span class="gt">Md Farhan Ansari</span></h2>
+      <p>I believe skills are the one thing no one can take away from you. I’m here to give you the clear roadmap I wish someone had given me: simple, practical and built for real life.</p>
+      <p>My mission is simple: help you learn real digital skills and take your first confident step towards earning on your own terms.</p>
+      <div class="tags"><span>🎯 Skills Mentor</span><span>💻 Digital Entrepreneur</span><span>🚀 Income Coach</span></div>
+      <!-- Numbers apne asli figures se badal lena -->
+      <div class="stats">
+        <div class="stat"><b class="gt"><span class="counter" data-target="1000" data-suffix="+">0</span></b><span>People Guided</span></div>
+        <div class="stat"><b class="gt"><span class="counter" data-target="100" data-suffix="%">0</span></b><span>Practical Training</span></div>
+        <div class="stat"><b class="gt"><span class="counter" data-target="24" data-suffix="/7">0</span></b><span>WhatsApp Support</span></div>
+      </div>
+      <button class="btn open-any" data-source="Mentor Section">📲 Connect With Farhan</button>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGINE -->
+<section class="imagine">
+  <div class="container">
+    <div class="center rv"><h2 class="sec-title">Imagine <span class="gt">This…</span></h2></div>
+    <div style="max-width:740px;margin:34px auto 0" class="rv">
+      <div class="shift"><div class="from">📱 Scrolling reels</div><div class="arrow">→</div><div class="to">Creating &amp; earning from content</div></div>
+      <div class="shift"><div class="from">💸 Asking for money</div><div class="arrow">→</div><div class="to">Earning your own</div></div>
+      <div class="shift"><div class="from">😰 Feeling stuck</div><div class="arrow">→</div><div class="to">Moving forward every week</div></div>
+      <div class="shift"><div class="from">🧠 Self-doubt</div><div class="arrow">→</div><div class="to">Real confidence</div></div>
+    </div>
+    <div class="dream rv">
+      <p>You wake up… check your phone…</p>
+      <p>and see money <b style="color:var(--aqua)">you</b> earned yourself.</p>
+      <p class="strong">No asking. No explaining. No depending.</p>
+      <p style="margin-top:10px">Not because someone gave it to you, but because you built it.</p>
+      <div class="cta-row"><button class="btn open-any" data-source="Imagine Section">👉 Start Your Journey Today</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUT WHAT IF -->
+<section>
+  <div class="container" style="max-width:800px">
+    <div class="center rv"><h2 class="sec-title">“But what <span class="gt">if…”</span></h2></div>
+    <div style="margin-top:32px" class="rv">
+      <div class="qa"><div class="n">?</div><div><h4>“What if I don’t have any skills?”</h4><p>Perfect. That’s exactly where you start. We build everything from zero.</p></div></div>
+      <div class="qa"><div class="n">?</div><div><h4>“What if I don’t have time?”</h4><p>You don’t need hours. You need 1–2 hours of consistency a day.</p></div></div>
+      <div class="qa"><div class="n">?</div><div><h4>“What if I fail?”</h4><p>You only fail when you don’t start. Action is the only cure.</p></div></div>
+      <div class="qa"><div class="n">?</div><div><h4>“What if I’m not confident?”</h4><p>Confidence comes after you begin, not before.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PURPOSE -->
+<section class="purpose">
+  <div class="container rv">
+    <h2 class="sec-title">This Is <span class="gt">Bigger Than Money</span></h2>
+    <p>Not asking before spending.</p>
+    <p>Not depending on anyone.</p>
+    <p>Not settling for less.</p>
+    <p class="big">This is about building a life where you have choices.<br>And that starts with skills.</p>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section>
+  <div class="container">
+    <div class="center rv"><h2 class="sec-title">What Happens <span class="gt">After You Join</span></h2></div>
+    <div class="grid g4 steps rv" style="margin-top:36px">
+      <div class="card step tilt"><span class="num">Step 1</span><div class="ic">⚡</div><h3>Instant Connection</h3><p>Direct WhatsApp access to Farhan’s team after you apply.</p></div>
+      <div class="card step tilt"><span class="num">Step 2</span><div class="ic">🎓</div><h3>Beginner-Friendly Learning</h3><p>No jargon. No confusion. A clear roadmap from day one.</p></div>
+      <div class="card step tilt"><span class="num">Step 3</span><div class="ic">💼</div><h3>Real-World Practice</h3><p>Learn by doing, not just by watching videos.</p></div>
+      <div class="card step tilt"><span class="num">Step 4</span><div class="ic">🤝</div><h3>Ongoing Support</h3><p>Guidance and a community, so you never do it alone.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--bg2)">
+  <div class="container" style="max-width:800px">
+    <div class="center rv"><h2 class="sec-title">Frequently Asked <span class="gt">Questions</span></h2></div>
+    <div style="margin-top:32px" class="rv">
+      <details open><summary>What kind of skills will I learn?</summary><p>Practical digital skills such as social media, content creation, affiliate marketing and more. All skill-based and in demand.</p></details>
+      <details><summary>Do I need any prior experience?</summary><p>None at all. We start from zero and guide you step by step.</p></details>
+      <details><summary>How much time do I need daily?</summary><p>Around 1–2 hours a day. It’s flexible for students, working professionals and homemakers.</p></details>
+      <details><summary>Do I need a laptop?</summary><p>No. You can learn everything on your smartphone.</p></details>
+      <details><summary>When will I start seeing results?</summary><p>It depends on your effort and consistency. Our focus is to get you practising real skills from the very first week.</p></details>
+      <details><summary>Is there any fee?</summary><p>Message us on WhatsApp for full details about the program and fees. No hidden charges.</p></details>
+      <details><summary>Can I do this along with my job or studies?</summary><p>Yes. It’s designed for busy people. Learn at your own pace in your spare time.</p></details>
+      <details><summary>What support will I get after joining?</summary><p>Guidance from Farhan’s team, WhatsApp support and access to the community.</p></details>
+    </div>
+    <p class="note center">Results vary from person to person and depend on effort and consistency.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="aurora"><i></i><i></i></div>
+  <div class="container rv">
+    <h2>Don’t Stay Stuck Another 6 Months Thinking <span class="gt">“I’ll Start Soon.”</span></h2>
+    <p class="sub">You don’t need to be ready. You just need to take the first step.</p>
+    <button class="btn pulse open-any" data-source="Final CTA">👉 Start Your Journey Today</button>
+    <div class="how">
+      <h4>📲 How to start?</h4>
+      <p style="color:var(--muted)">Fill the quick form or message on WhatsApp with:</p>
+      <ul><li>Your full name</li><li>Your age</li><li>Your profession (student / homemaker / working professional)</li></ul>
+      <p class="nt">⏳ Within 24 hours you’ll get program details &amp; your personal roadmap.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">Md Farhan <span class="gt">Ansari</span></div>
+    <p class="quote">“Your future doesn’t change by waiting. It changes when you decide.”</p>
+    <button class="linkbtn" id="privacyBtn">Privacy Policy</button>
+    <small>© 2026 Md Farhan Ansari. All rights reserved.</small>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><button class="btn open-any" data-source="Sticky Bar">🚀 Start Your Journey</button></div>
+
+<!-- FORM -->
+<div class="backdrop" id="backdrop"></div>
+<div class="modal" id="formModal" role="dialog" aria-modal="true" aria-label="Start your journey">
+  <button class="x" id="closeForm" aria-label="Close">×</button>
+  <h3>🚀 Start Your Journey</h3>
+  <p class="msub">Fill your details &amp; connect on WhatsApp</p>
+  <form id="mainForm" novalidate>
+    <input type="hidden" id="sourceInfo">
+    <div class="f"><label for="inp_name">Full Name *</label><input id="inp_name" type="text" placeholder="Enter your full name" autocomplete="name"><div class="err">Please enter your name</div></div>
+    <div class="f"><label for="inp_phone">WhatsApp Number *</label><input id="inp_phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit number" autocomplete="tel"><div class="err">Enter a valid 10-digit number</div></div>
+    <div class="row2">
+      <div class="f"><label for="inp_age">Age *</label><input id="inp_age" type="number" min="15" max="65" placeholder="Your age"><div class="err">Age 15–65</div></div>
+      <div class="f"><label for="inp_gender">Gender *</label><select id="inp_gender"><option value="">Select</option><option value="male">Male</option><option value="female">Female</option><option value="other">Other</option></select><div class="err">Select one</div></div>
+    </div>
+    <div class="f"><label for="inp_profession">Profession *</label><select id="inp_profession"><option value="">Select your status</option><option>Student</option><option>Housewife</option><option>Working Professional</option><option>Other</option></select><div class="err">Select one</div></div>
+    <button type="submit" class="btn" style="width:100%">📲 Send &amp; Connect on WhatsApp</button>
+    <p class="secure">🔒 Your details are safe with us.</p>
+  </form>
+</div>
+
+<!-- PRIVACY -->
+<div class="modal pp" id="privacyModal" role="dialog" aria-modal="true" aria-label="Privacy policy">
+  <button class="x" id="closePrivacy" aria-label="Close">×</button>
+  <h3 style="color:var(--aqua);margin-bottom:16px">Privacy Policy</h3>
+  <p><strong>Information We Collect:</strong> Name, phone, age, gender and profession you provide via our form.</p>
+  <p><strong>How We Use It:</strong> Only to share program info, provide mentorship support and updates. Never sold to third parties.</p>
+  <p><strong>Data Security:</strong> We implement industry-standard measures. Data is accessed only by authorized personnel.</p>
+  <p><strong>Your Rights:</strong> Access, correct, or delete your data anytime by contacting us on WhatsApp.</p>
+  <p><strong>Disclaimer:</strong> Results depend on personal effort and consistency. Earnings vary per individual.</p>
+  <p style="text-align:center;margin-top:16px">© 2026 Md Farhan Ansari. All rights reserved.</p>
+</div>
+
+<script>
+/* ===== CONFIG ===== */
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwaUerhAnk90PCvCDu-h8ghQZwi6e8k97GeS0azTFpmXMxaxNcMMEeqZ9wA9GxMGhWk/exec";
+const WA_NUMBER  = "919939309646";
+const CLIENT     = "Md Farhan Ansari";
+
+/* Reveal on scroll */
+const rvObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rvObs.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.rv').forEach(el => rvObs.observe(el));
+
+/* Counters */
+const cObs = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting || e.target.dataset.done) return;
+  e.target.dataset.done = 1;
+  const t = +e.target.dataset.target, suf = e.target.dataset.suffix || '';
+  let c = 0; const inc = Math.max(1, Math.floor(t / 50));
+  const iv = setInterval(() => { c += inc; if (c >= t) { c = t; clearInterval(iv); } e.target.textContent = c.toLocaleString() + suf; }, 30);
+}), {threshold:.4});
+document.querySelectorAll('.counter').forEach(c => cObs.observe(c));
+
+/* 3D tilt on cards (desktop only) */
+if (matchMedia('(hover:hover)').matches) {
+  document.querySelectorAll('.tilt').forEach(c => {
+    c.addEventListener('mousemove', e => {
+      const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      c.style.transform = `perspective(700px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-4px)`;
+    });
+    c.addEventListener('mouseleave', () => { c.style.transform = ''; });
+  });
+}
+
+/* Sticky bar */
+const sticky = document.getElementById('sticky');
+addEventListener('scroll', () => sticky.classList.toggle('show', scrollY > 500), {passive:true});
+
+/* Modals */
+const backdrop = document.getElementById('backdrop'),
+      formModal = document.getElementById('formModal'),
+      privacyModal = document.getElementById('privacyModal'),
+      mainForm = document.getElementById('mainForm'),
+      sourceInfo = document.getElementById('sourceInfo');
+
+function openForm(src){ sourceInfo.value = src || 'Website'; backdrop.classList.add('show'); formModal.classList.add('show'); document.body.style.overflow='hidden'; }
+function closeAll(){ backdrop.classList.remove('show'); formModal.classList.remove('show'); privacyModal.classList.remove('show'); document.body.style.overflow=''; }
+document.addEventListener('click', e => { const t = e.target.closest('.open-any'); if (t) { e.preventDefault(); openForm(t.dataset.source); } });
+document.getElementById('closeForm').onclick = closeAll;
+document.getElementById('closePrivacy').onclick = closeAll;
+backdrop.onclick = closeAll;
+document.getElementById('privacyBtn').onclick = () => { backdrop.classList.add('show'); privacyModal.classList.add('show'); document.body.style.overflow='hidden'; };
+addEventListener('keydown', e => { if (e.key === 'Escape') closeAll(); });
+
+/* Meta Contact event (works only if you add your own Pixel) */
+function trackContact(){
+  try {
+    if (typeof fbq !== 'undefined' && !sessionStorage.getItem('farhan_contact')) {
+      fbq('track','Contact'); sessionStorage.setItem('farhan_contact','1');
+    }
+  } catch(e){}
+}
+
+/* Submit → Google Sheet + WhatsApp */
+function setBad(id, bad){ document.getElementById(id).closest('.f').classList.toggle('bad', bad); return !bad; }
+mainForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('inp_name').value.trim();
+  const phone = document.getElementById('inp_phone').value.replace(/\D/g,'');
+  const age = document.getElementById('inp_age').value;
+  const gender = document.getElementById('inp_gender').value;
+  const profession = document.getElementById('inp_profession').value;
+  const source = sourceInfo.value || 'Website';
+
+  const ok = [
+    setBad('inp_name', name.length < 2),
+    setBad('inp_phone', phone.length !== 10),
+    setBad('inp_age', !age || age < 15 || age > 65),
+    setBad('inp_gender', !gender),
+    setBad('inp_profession', !profession)
+  ].every(Boolean);
+  if (!ok) return;
+
+  const params = new URLSearchParams({ name, phone, age, gender, profession, source: source + ' | ' + CLIENT });
+  try { fetch(SCRIPT_URL + '?' + params.toString(), { method:'POST', mode:'no-cors' }).catch(()=>{}); } catch(err){}
+
+  const msg = encodeURIComponent(
+    `Hello Farhan! 👋\n\nI'm interested in your skills program. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share the next steps. Thank you! ✨`
+  );
+  trackContact();
+  closeAll();
+  setTimeout(() => mainForm.reset(), 300);
+  window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank');
+});
+</script>
+</body>
+</html>
