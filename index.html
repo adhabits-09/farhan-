@@ -14,10 +14,11 @@
 <!-- Meta Pixel: apna naya Pixel ID yaha daalo (purane client ka ID use mat karna) -->
 <style>
 :root{
-  --bg:#080b1e;--bg2:#0d1230;--card:#111739;--line:rgba(255,255,255,.1);
-  --text:#eef1ff;--muted:#9aa3c7;--aqua:#2ee6d6;--violet:#8b6bff;--pink:#ff6fb5;
-  --grad:linear-gradient(120deg,#2ee6d6,#8b6bff);
-  --glow:0 10px 40px rgba(139,107,255,.45);
+  /* === COLORS: yaha se badlo === */
+  --bg:#0a0a0c;--bg2:#121214;--card:#18181b;--line:rgba(255,255,255,.09);
+  --text:#f5f5f7;--muted:#a1a1aa;--aqua:#ffb703;--violet:#ff7a18;--pink:#ffd166;
+  --grad:linear-gradient(135deg,#ffb703,#ff7a18);
+  --glow:0 10px 40px rgba(255,122,24,.4);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -35,20 +36,20 @@ section{padding:84px 0;position:relative}
 /* aurora background */
 .aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none}
 .aurora i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift 14s ease-in-out infinite alternate}
-.aurora i:nth-child(1){width:420px;height:420px;background:#4b2fd6;top:-120px;left:-100px}
-.aurora i:nth-child(2){width:360px;height:360px;background:#0fb9ac;top:80px;right:-80px;animation-delay:-5s}
-.aurora i:nth-child(3){width:300px;height:300px;background:#c13c86;bottom:-120px;left:40%;animation-delay:-9s;opacity:.3}
+.aurora i:nth-child(1){width:420px;height:420px;background:#b45309;top:-120px;left:-100px}
+.aurora i:nth-child(2){width:360px;height:360px;background:#ff7a18;top:80px;right:-80px;animation-delay:-5s}
+.aurora i:nth-child(3){width:300px;height:300px;background:#f59e0b;bottom:-120px;left:40%;animation-delay:-9s;opacity:.3}
 @keyframes drift{to{transform:translate(70px,50px) scale(1.15)}}
 
 /* button */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--grad);color:#06091c;font-weight:700;font-size:1.02rem;padding:16px 32px;border:none;border-radius:14px;cursor:pointer;box-shadow:var(--glow);transition:transform .25s,box-shadow .25s;font-family:inherit;position:relative}
-.btn:hover{transform:translateY(-3px);box-shadow:0 14px 50px rgba(46,230,214,.45)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--grad);color:#1a0f00;font-weight:700;font-size:1.02rem;padding:16px 32px;border:none;border-radius:14px;cursor:pointer;box-shadow:var(--glow);transition:transform .25s,box-shadow .25s;font-family:inherit;position:relative}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 50px rgba(255,183,3,.45)}
 .btn:active{transform:scale(.98)}
 .pulse{animation:pulse 2.6s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 8px 30px rgba(139,107,255,.4)}50%{box-shadow:0 8px 52px rgba(46,230,214,.65)}}
+@keyframes pulse{0%,100%{box-shadow:0 8px 30px rgba(255,122,24,.4)}50%{box-shadow:0 8px 52px rgba(255,183,3,.65)}}
 
 /* nav */
-nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(8,11,30,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(10,10,12,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{font-family:'Sora',sans-serif;font-weight:800;font-size:1.1rem}
 .nav-links{display:flex;gap:26px;align-items:center}
@@ -61,9 +62,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(8,11,30,.78)
 .hero{padding:130px 0 80px;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative;z-index:2}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-photo{order:-1}}
-.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(46,230,214,.1);border:1px solid rgba(46,230,214,.35);color:var(--aqua);padding:8px 18px;border-radius:50px;font-size:.85rem;font-weight:600;margin-bottom:22px}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,183,3,.1);border:1px solid rgba(255,183,3,.35);color:var(--aqua);padding:8px 18px;border-radius:50px;font-size:.85rem;font-weight:600;margin-bottom:22px}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--aqua);animation:dot 1.8s infinite}
-@keyframes dot{0%{box-shadow:0 0 0 0 rgba(46,230,214,.7)}70%,100%{box-shadow:0 0 0 10px rgba(46,230,214,0)}}
+@keyframes dot{0%{box-shadow:0 0 0 0 rgba(255,183,3,.7)}70%,100%{box-shadow:0 0 0 10px rgba(255,183,3,0)}}
 .hero h1{font-size:clamp(2.1rem,5.6vw,3.7rem);font-weight:800;margin-bottom:20px}
 .hero h1 .line{display:block;overflow:hidden}
 .hero h1 .line span{display:block;transform:translateY(105%);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
@@ -77,12 +78,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(8,11,30,.78)
 
 /* photo with rotating ring */
 .hero-photo{position:relative;max-width:400px;width:100%;margin:0 auto}
-.ring{position:absolute;inset:-14px;border-radius:34px;background:conic-gradient(from 0deg,#2ee6d6,#8b6bff,#ff6fb5,#2ee6d6);animation:spin 7s linear infinite;filter:blur(1px)}
+.ring{position:absolute;inset:-14px;border-radius:34px;background:conic-gradient(from 0deg,#ffb703,#ff7a18,#ffd166,#ffb703);animation:spin 7s linear infinite;filter:blur(1px)}
 @keyframes spin{to{transform:rotate(360deg)}}
-.hero-photo .frame{position:relative;border-radius:28px;overflow:hidden;background:var(--bg2);border:4px solid var(--bg);animation:float 6s ease-in-out infinite}
+.hero-photo .frame{position:relative;border-radius:28px;overflow:hidden;background:var(--bg2);border:3px solid transparent;background:linear-gradient(var(--bg2),var(--bg2)) padding-box,var(--grad) border-box;box-shadow:var(--glow);animation:float 6s ease-in-out infinite}
 @keyframes float{50%{transform:translateY(-10px)}}
 .hero-photo img{width:100%;height:auto}
-.hero-photo .badge{position:absolute;left:14px;bottom:14px;background:rgba(8,11,30,.85);backdrop-filter:blur(8px);border:1px solid rgba(46,230,214,.4);padding:8px 16px;border-radius:40px;font-size:.82rem;font-weight:600;color:var(--aqua)}
+.hero-photo .badge{position:absolute;left:14px;bottom:14px;background:rgba(10,10,12,.85);backdrop-filter:blur(8px);border:1px solid rgba(255,183,3,.4);padding:8px 16px;border-radius:40px;font-size:.82rem;font-weight:600;color:var(--aqua)}
 
 /* skills ticker */
 .ticker{border-block:1px solid var(--line);background:var(--bg2);overflow:hidden;padding:16px 0}
@@ -96,7 +97,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(8,11,30,.78)
 @media(max-width:900px){.g4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.g2,.g4{grid-template-columns:1fr}section{padding:62px 0}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:border-color .3s,transform .3s;transform-style:preserve-3d}
-.card:hover{border-color:rgba(46,230,214,.55)}
+.card:hover{border-color:rgba(255,183,3,.55)}
 .card .ic{font-size:1.7rem;margin-bottom:10px}
 .card p{color:var(--muted);font-size:.98rem}
 .card h3{font-size:1.08rem;margin-bottom:6px}
@@ -135,7 +136,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(8,11,30,.78)
 .dream .strong{color:var(--text);font-weight:700;font-size:1.25rem;margin-top:14px}
 
 .qa{display:grid;grid-template-columns:auto 1fr;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:12px}
-.qa .n{width:40px;height:40px;border-radius:12px;background:var(--grad);color:#06091c;font-weight:800;display:flex;align-items:center;justify-content:center}
+.qa .n{width:40px;height:40px;border-radius:12px;background:var(--grad);color:#1a0f00;font-weight:800;display:flex;align-items:center;justify-content:center}
 .qa h4{font-size:1.05rem;margin-bottom:4px}
 .qa p{color:var(--muted)}
 
@@ -152,7 +153,7 @@ details summary{list-style:none;cursor:pointer;padding:19px 22px;font-weight:600
 details summary::-webkit-details-marker{display:none}
 details summary::after{content:'+';color:var(--aqua);font-size:1.5rem;transition:transform .3s}
 details[open] summary::after{transform:rotate(45deg)}
-details[open]{border-color:rgba(46,230,214,.5)}
+details[open]{border-color:rgba(255,183,3,.5)}
 details p{padding:0 22px 20px;color:var(--muted)}
 
 .final{text-align:center;overflow:hidden}
@@ -172,9 +173,9 @@ footer small{color:var(--muted);display:block;margin-top:6px}
 .note{color:var(--muted);font-size:.85rem;margin-top:16px}
 
 /* modals */
-.backdrop{position:fixed;inset:0;background:rgba(4,6,18,.7);backdrop-filter:blur(8px);z-index:9998;opacity:0;visibility:hidden;transition:.3s}
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:9998;opacity:0;visibility:hidden;transition:.3s}
 .backdrop.show{opacity:1;visibility:visible}
-.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.95);z-index:9999;width:92%;max-width:460px;max-height:90vh;overflow-y:auto;background:var(--card);border:1px solid rgba(139,107,255,.5);border-radius:22px;padding:30px 26px;opacity:0;visibility:hidden;transition:.3s;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.95);z-index:9999;width:92%;max-width:460px;max-height:90vh;overflow-y:auto;background:var(--card);border:1px solid rgba(255,122,24,.5);border-radius:22px;padding:30px 26px;opacity:0;visibility:hidden;transition:.3s;box-shadow:0 30px 80px rgba(0,0,0,.6)}
 .modal.show{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
 .modal .x{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:1.7rem;cursor:pointer}
 .modal .x:hover{color:var(--aqua)}
@@ -183,7 +184,7 @@ footer small{color:var(--muted);display:block;margin-top:6px}
 .f{margin-bottom:14px}
 .f label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
 .f input,.f select{width:100%;background:var(--bg);border:1.5px solid var(--line);color:var(--text);border-radius:12px;padding:13px 14px;font-size:1rem;font-family:inherit;transition:.2s}
-.f input:focus,.f select:focus{outline:none;border-color:var(--aqua);box-shadow:0 0 0 4px rgba(46,230,214,.15)}
+.f input:focus,.f select:focus{outline:none;border-color:var(--aqua);box-shadow:0 0 0 4px rgba(255,183,3,.15)}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .err{color:#ff7b8a;font-size:.82rem;margin-top:4px;display:none}
 .f.bad .err{display:block}.f.bad input,.f.bad select{border-color:#ff7b8a}
@@ -191,7 +192,7 @@ footer small{color:var(--muted);display:block;margin-top:6px}
 .pp p{color:var(--muted);font-size:.92rem;margin-bottom:12px}
 .pp strong{color:var(--text)}
 
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:800;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(8,11,30,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:none;transform:translateY(110%);transition:.4s}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:800;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(10,10,12,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:none;transform:translateY(110%);transition:.4s}
 .sticky.show{transform:none}
 .sticky .btn{width:100%;padding:14px}
 @media(max-width:768px){.sticky{display:block}}
@@ -209,7 +210,7 @@ footer small{color:var(--muted);display:block;margin-top:6px}
     <div class="logo">Md Farhan <span class="gt">Ansari</span></div>
     <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#faq">FAQ</a>
+      <a href="#steps">Journey</a><a href="#final">Join</a>
       <button class="btn nav-cta open-any" data-source="Navbar">Start Now</button>
     </div>
   </div>
@@ -220,26 +221,21 @@ footer small{color:var(--muted);display:block;margin-top:6px}
   <div class="aurora"><i></i><i></i><i></i></div>
   <div class="container hero-grid">
     <div>
-      <div class="pill"><span class="dot"></span> <span class="counter" data-target="1000" data-suffix="+">0</span> People Already Joined</div>
+      <div class="pill"><span class="dot"></span> <span class="counter" data-target="1000" data-suffix="+">0</span> people already started their journey</div>
       <h1><span class="line"><span>Stop Depending on Others.</span></span><span class="line"><span class="gt">Start Earning With Skills.</span></span></h1>
       <p class="lead">No experience. No degree. No confusion. A clear, step-by-step path to learn in-demand digital skills and build your own online income, even if you’re starting from zero.</p>
       <button class="btn pulse open-any" data-source="Hero">🚀 Start Your Journey Now</button>
-      <div class="ticks"><span>No Experience Needed</span><span>Learn on Your Smartphone</span><span>Personal Guidance</span></div>
+      <div class="ticks"><span>No Experience Needed</span><span>Start in 24 Hours</span><span>Real Earning Skills</span></div>
     </div>
     <div class="hero-photo">
-      <div class="ring"></div>
       <div class="frame">
         <img src="https://i.ibb.co/Dfb4MsNV/Whats-App-Image-2026-10-22-at-10-37-07-AM.jpg" alt="Md Farhan Ansari – Skills Mentor" fetchpriority="high">
-        <div class="badge">✓ Your Skills Mentor</div>
+        <div class="badge">✓ Verified Coach</div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div>
-  <span><b>◆</b>Social Media</span><span><b>◆</b>Content Creation</span><span><b>◆</b>Affiliate Marketing</span><span><b>◆</b>Video Editing</span><span><b>◆</b>Personal Branding</span><span><b>◆</b>Online Income</span>
-  <span><b>◆</b>Social Media</span><span><b>◆</b>Content Creation</span><span><b>◆</b>Affiliate Marketing</span><span><b>◆</b>Video Editing</span><span><b>◆</b>Personal Branding</span><span><b>◆</b>Online Income</span>
-</div></div>
 
 <!-- SOUND FAMILIAR -->
 <section>
@@ -341,7 +337,7 @@ footer small{color:var(--muted);display:block;margin-top:6px}
 </section>
 
 <!-- STEPS -->
-<section>
+<section id="steps">
   <div class="container">
     <div class="center rv"><h2 class="sec-title">What Happens <span class="gt">After You Join</span></h2></div>
     <div class="grid g4 steps rv" style="margin-top:36px">
@@ -353,26 +349,9 @@ footer small{color:var(--muted);display:block;margin-top:6px}
   </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq" style="background:var(--bg2)">
-  <div class="container" style="max-width:800px">
-    <div class="center rv"><h2 class="sec-title">Frequently Asked <span class="gt">Questions</span></h2></div>
-    <div style="margin-top:32px" class="rv">
-      <details open><summary>What kind of skills will I learn?</summary><p>Practical digital skills such as social media, content creation, affiliate marketing and more. All skill-based and in demand.</p></details>
-      <details><summary>Do I need any prior experience?</summary><p>None at all. We start from zero and guide you step by step.</p></details>
-      <details><summary>How much time do I need daily?</summary><p>Around 1–2 hours a day. It’s flexible for students, working professionals and homemakers.</p></details>
-      <details><summary>Do I need a laptop?</summary><p>No. You can learn everything on your smartphone.</p></details>
-      <details><summary>When will I start seeing results?</summary><p>It depends on your effort and consistency. Our focus is to get you practising real skills from the very first week.</p></details>
-      <details><summary>Is there any fee?</summary><p>Message us on WhatsApp for full details about the program and fees. No hidden charges.</p></details>
-      <details><summary>Can I do this along with my job or studies?</summary><p>Yes. It’s designed for busy people. Learn at your own pace in your spare time.</p></details>
-      <details><summary>What support will I get after joining?</summary><p>Guidance from Farhan’s team, WhatsApp support and access to the community.</p></details>
-    </div>
-    <p class="note center">Results vary from person to person and depend on effort and consistency.</p>
-  </div>
-</section>
 
 <!-- FINAL CTA -->
-<section class="final">
+<section class="final" id="final">
   <div class="aurora"><i></i><i></i></div>
   <div class="container rv">
     <h2>Don’t Stay Stuck Another 6 Months Thinking <span class="gt">“I’ll Start Soon.”</span></h2>
@@ -382,7 +361,7 @@ footer small{color:var(--muted);display:block;margin-top:6px}
       <h4>📲 How to start?</h4>
       <p style="color:var(--muted)">Fill the quick form or message on WhatsApp with:</p>
       <ul><li>Your full name</li><li>Your age</li><li>Your profession (student / homemaker / working professional)</li></ul>
-      <p class="nt">⏳ Within 24 hours you’ll get program details &amp; your personal roadmap.</p>
+      <p class="note" style="margin-top:14px">Results vary from person to person and depend on effort and consistency.</p><p class="nt">⏳ Within 24 hours you’ll get program details &amp; your personal roadmap.</p>
     </div>
   </div>
 </section>
@@ -390,6 +369,7 @@ footer small{color:var(--muted);display:block;margin-top:6px}
 <footer>
   <div class="container">
     <div class="logo">Md Farhan <span class="gt">Ansari</span></div>
+    <p style="margin-top:8px"><a class="linkbtn" href="https://wa.me/919939309646?text=Hi%20Farhan%2C%20I%20want%20to%20start%20my%20journey%20with%20you%21" target="_blank" rel="noopener">📱 +91 99393 09646</a></p>
     <p class="quote">“Your future doesn’t change by waiting. It changes when you decide.”</p>
     <button class="linkbtn" id="privacyBtn">Privacy Policy</button>
     <small>© 2026 Md Farhan Ansari. All rights reserved.</small>
