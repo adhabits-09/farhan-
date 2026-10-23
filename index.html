@@ -11,7 +11,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-<!-- Meta Pixel: apna naya Pixel ID yaha daalo (purane client ka ID use mat karna) -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '850916068015836');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 <style>
 :root{
   /* === COLORS: yaha se badlo === */
@@ -204,6 +217,7 @@ footer small{color:var(--muted);display:block;margin-top:6px}
 </style>
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=850916068015836&ev=PageView&noscript=1" alt=""/></noscript>
 
 <nav>
   <div class="container nav-in">
@@ -463,11 +477,7 @@ addEventListener('keydown', e => { if (e.key === 'Escape') closeAll(); });
 
 /* Meta Contact event (works only if you add your own Pixel) */
 function trackContact(){
-  try {
-    if (typeof fbq !== 'undefined' && !sessionStorage.getItem('farhan_contact')) {
-      fbq('track','Contact'); sessionStorage.setItem('farhan_contact','1');
-    }
-  } catch(e){}
+  try { if (typeof fbq !== 'undefined') fbq('track','Contact'); } catch(e){}
 }
 
 /* Submit → Google Sheet + WhatsApp */
